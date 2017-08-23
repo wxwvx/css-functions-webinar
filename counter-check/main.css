@@ -1,0 +1,37 @@
+.wrapper {
+  counter-reset: checked;
+}
+
+.check {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.check__text {
+  border: 2px solid teal;
+  border-radius: 10px;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  text-transform: uppercase;
+  font-family: PT Sans;
+  color: teal;
+  font-weight: bold;
+}
+
+.check__elem {
+  position: absolute;
+  left: -9999px;
+  top: 0; 
+}
+
+.check__elem:checked + .check__text {
+  color: yellowgreen;
+  border-color: yellowgreen;
+  counter-increment: checked;
+}
+
+.length__counter:before {
+  content: counter(checked);
+}

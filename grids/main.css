@@ -1,0 +1,49 @@
+:root {
+  --items : 5
+}
+
+@media screen and (max-width: 992px) {
+  :root {
+    --items: 4
+  }
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --items: 3
+  }
+}
+
+@media screen and (max-width: 480px) {
+  :root {
+    --items: 1
+  }
+}
+
+.wrapper:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.wrapper {
+  margin-left: -20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  /* float: left; */
+  /* width: 200px; */
+  height: 200px;
+  margin-bottom: 20px;
+  background: #16a085;
+  margin-left: 20px;
+  flex: 1 1 200px;
+  /* width: calc(100% / var(--items) - 20px); */
+}

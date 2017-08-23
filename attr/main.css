@@ -1,0 +1,70 @@
+.container {
+  width: 800px;
+  margin: 0px auto;
+  padding-top: 50px;
+}
+
+.tooltipped {
+  position: relative;
+}
+
+.tooltipped:before {
+  content: attr(data-text);
+  position: absolute;
+  padding: 3px 5px;
+  background: #000;
+  color: #fff;
+  border-radius: 5px;
+  text-transform: lowercase;
+  bottom: 100%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  opacity: 0;
+  left: -9999px;
+  transition: opacity .3s;
+}
+
+.tooltipped:hover:before {
+  opacity: 1;
+  left: 50%;
+}
+
+.image {
+  cursor: pointer;
+  position: relative;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.image:after,
+.image:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background: rgba(00, 00, 00, .5);
+  transition: .5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: bold;
+}
+
+.image:before {
+  content: attr(data-top);
+  top: 0;
+  transform: translateY(-100%);
+}
+
+.image:after {
+  content: attr(data-bottom);
+  bottom: 0;
+  transform: translateY(100%);
+}
+
+.image:hover:after, .image:hover:before {
+  transform: translateY(0);
+}

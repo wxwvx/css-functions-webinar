@@ -1,0 +1,17 @@
+.container {
+  margin: 0 auto;
+  width: 70%;
+}
+
+.text {
+  width: 60%;
+}
+
+.menu {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: fixed;
+  top: 10px;
+  right: calc(40% - 100px);
+}

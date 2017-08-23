@@ -1,0 +1,5 @@
+.list {
+  list-style: symbol(numeric "\1F62F" "\1F479");
+  margin-left: 100px;
+  font-size: 30px;
+}

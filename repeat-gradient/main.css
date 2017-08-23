@@ -1,0 +1,32 @@
+html {
+  height: 100%;
+}
+
+/* body {
+  background: repeating-linear-gradient(
+   -45deg, #fff 0px, #fff 10px, yellowgreen 10px, yellowgreen 20px
+  )
+} */
+
+/* .slider {
+  width: 300px;
+  height: 50px;
+  background-image: repeating-linear-gradient(
+    90deg, #ccc 0px, #ccc 1px, transparent 1px, transparent 30px
+  ), repeating-linear-gradient(
+    90deg, #ccc 0px, #ccc 1px, transparent 1px, transparent 30px
+  );
+
+  background-position: 0 0, 15px center;
+  background-size: 100%, 100% 50%;
+  background-repeat: repeat-x, repeat-x;
+} */
+
+.mail {
+  width: 300px;
+  height: 300px;
+  border: 10px solid transparent;
+  border-image: repeating-linear-gradient(
+    -45deg, red 0px, red 5px, white 5px, white 10px, blue 10px, blue 15px, white 15px, white 20px
+  ) 10;
+}
